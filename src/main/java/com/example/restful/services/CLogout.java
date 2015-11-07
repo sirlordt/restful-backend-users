@@ -13,7 +13,7 @@ import org.codehaus.jettison.json.JSONObject;
 
 //The /restful/  provided in web.xml servlet-mapping
 
-//Path: http://localhost/<appln-folder-name>/restful/onlyauthenticated
+//Path: http://localhost/<appln-folder-name>/restful/logout
 @Path("/logout")
 public class CLogout {
 
@@ -21,11 +21,11 @@ public class CLogout {
     HttpServletRequest ServletRequest;
     
     //Using chrome application Avanced rest client using post o get method
-    //http://localhost:8080/restful-backend-users/restful/onlyauthenticated/domessage?message=nice!!!!
+    //http://localhost:8080/restful-backend-users/restful/logout/dologout
     
     // HTTP Get Method
     @GET
-    // Path: http://localhost/<appln-folder-name>/restful/onlyauthenticated/domessage
+    // Path: http://localhost/<appln-folder-name>/restful/logout/dologout
     @Path( "/dologout" )
     // Produces JSON as response
     @Produces( MediaType.APPLICATION_JSON ) 
